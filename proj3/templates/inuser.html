@@ -1,0 +1,45 @@
+{% extends 'inapp.html' %}
+{% block title %}User{% endblock %}
+{% block content %}
+
+<div class="leftcontainer">
+    <div class="card">
+        <h5>Profile tags</h5> 
+        <div class="tags">
+            <li><a href="">#rammanis</a></li>
+            <li><a href="">#wheat</a></li>
+            <li><a href="">#arah</a></li>
+        </div>
+        <div class="div"></div>
+        <div class="expand" id="edit">
+            <li><a href="">Edit Profile</a></li>
+        </div>
+    </div>
+    <div class="card">
+        <ul>
+            <li><a class="active" href="/dash">Dashboard</a></li>
+            <li><a href="/cultivate">Cultivate</a></li>
+            <li><a href="/history">History</a></li>
+            <li><a href="/story">Stories</a></li>
+            <li><a href="/account">Account</a></li>
+        </ul>
+    </div>
+    <div class="card">
+        <h5>Recents</h5>
+        <div class="tags">
+            <li><a href="#">#kiwi</a></li>
+            <li><a href="#">#dragonfruit</a></li>
+            <li><a href="#">#syntheticfarming</a></li>
+            <li><a href="#">#impartialgrowth</a></li>
+        </div>
+        <div class="div"></div>
+        <div class="expand" id="explore">
+            <li><a href="#">Explore</a></li>
+        </div>
+    </div>
+</div>
+
+{% block right %}
+{% endblock %}
+
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends 'inuser.html' %}
+{% block right %}
+<div class="rightcontainer">
+    <div class="card intro">
+        <div>
+            Logged in as <span>Ram Manis</span>
+        </div>
+        <div>
+            Email <span> rm@gmail.com</span>
+        </div>
+    </div>
+    <div class="card">
+        <h3>Sentiments</h3>
+        <br>
+        <p>We keep a track of sentiments related to your stories, your comments
+             and the responses to your stories so that we could improve our
+              facilities progressively. You can view all those here.
+        </p>
+        <div class="sentiments">
+            <div class="senti">Your stories 
+                <span id="story">0.36</span>
+            </div>
+            <div class="senti">On your stories
+                <span id="onstory">0.12</span>
+            </div>
+            <div class="senti">Your last story
+                <span id="laststory">-0.3</span>
+            </div>
+            <div class="senti">On your last story
+                <span id="onlaststory">-0.9</span>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <h3>Facilities you use</h3>
+        <br>
+        <p>No item to show</p>
+        <br>
+        <div class="line"></div>
+        <div class="expand" id="facilities">
+            <li><a href="#">Facilities</a></li>
+        </div>
+    </div>
+    <div class="card">
+        <h3>Applications</h3>
+        <br>
+        <p>Yet not applied</p>
+        <br>
+        <div class="line"></div>
+        <div class="expand" id="apply">
+            <li><a href="#">Apply</a></li>
+        </div>
+    </div>
+</div>
+{% endblock %}
