@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"><title>Farm Plus</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/inapp2.css') }}">
+</head>
+<body>
+    <nav class="navbar1">
+        <div class="logo">
+            <img src="{{ url_for('static',filename='images/logo.svg') }}"  id="logo">
+            <h4>Farm Plus</h4>
+        </div>
+        <div class="search">
+            <img src="{{ url_for('static',filename='images/search.png') }}" id="logoaxe">
+            <form action="/search">
+            <input type="text" id="search" placeholder="Search" name="query"/>
+            </form>
+        </div>
+    </nav>
+    <nav class="navbar2">
+        {% block nav2 %} {% endblock %}
+    </nav>
+    {% block content %}
+    {% endblock %}
+    <div class="anim">
+        <img src="{{ url_for('static',filename='images/axe.png') }}" alt="">
+        <h1>Please Wait..</h1>
+    </div>
+</body>
+<script>
+function axe() {
+    document.querySelector('.anim').classList.add('load');
+}
+</script>
+</html>
